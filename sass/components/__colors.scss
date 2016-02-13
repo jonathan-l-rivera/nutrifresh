@@ -1,0 +1,31 @@
+
+
+$color-primary:     	rgb(28, 117, 188);		// Most used main brand color
+$color-primary-alt:     rgb(28, 117, 188);
+$color-primary-dark:    rgb(28, 117, 188);
+
+$color-secondary: 		  rgb(218, 33, 40);		// Secondary Brand Color
+$color-secondary-alt: 	  rgb(218, 33, 40);			// Active, or hovered state color
+$color-secondary-dark: 	  rgb(218, 33, 40);
+
+$color-tertiary:      	  rgb(254,243,10);				// Should rarely need to be used, but if you need something colorful
+$color-tertiary-alt:  	  rgb(255,251,170);				// Active, or hovered state color
+
+$color-nuetral-1: hsl(204, 3%, 60%);	// Lightest
+$color-nuetral-2: hsl(204, 3%, 50%);
+$color-nuetral-3: #353E47;	// Darkest
+
+$color-white-1:	  rgb(255,255,255); 	// Lighest
+$color-white-2:   rgb(245, 248, 250);
+$color-white-3:   rgb(235, 238, 242);		// Darkest
+
+$color-black-1:   rgb(107, 100, 100); 	// Lighest
+$color-black-2:   rgb(67, 60, 60);
+$color-black-3:   rgb(0, 0, 0); 	// Darkest
+
+$color-macker-primary: hsl(206, 75, 42); // Macker blue
+$color-macker-secondary: hsl(358, 74, 49); // Macker red
+$color-macker-tertiary: hsl(57, 100, 50); // Macker yellow
+
+$color-header:   hsla(220, 8%, 15%, 1.0);
+$color-header-sticky:   hsla(220, 8%, 15%, 0.75);

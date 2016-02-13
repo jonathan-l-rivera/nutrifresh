@@ -1,0 +1,67 @@
+html {
+	color: $color-black-1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+	color: $color-black-3;
+}
+
+.section-title {
+	text-align: center;
+	margin-bottom: baseline(2);
+}
+ 
+/* ==========================
+	
+	Sections 
+	
+ ========================== */
+ .hero-header {
+	 background: url(../images/hero-header-bg.jpg);
+	 background-size: cover;
+ }
+ 
+ .hero-content {
+	 max-width: 50vw;
+	 padding: baseline(2);
+	 color: $color-white-1;
+	 @include color-inherent;
+	 
+	 h1 {
+		 text-transform: none;
+	 }
+ }
+ 
+ .features {
+	 padding: baseline(4) 0;
+ }
+ 
+ .testimonials {
+	 padding: baseline(4) 0;
+	 background-image: url(../images/testimonial-bg.jpg);
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 color: $color-white-1;
+	 text-align: center;
+	 font-weight: 300;
+ }
+ 
+ .why-nutrifresh {
+	background: $color-white-2 url(../images/why-nutrifresh-bg.jpg) no-repeat left center;
+ }
+ 
+ .why-content {
+	 padding-top: baseline(2);
+	 padding-bottom: baseline(2);
+	 max-width: calc(#{$sitewidth} * 2/3); 
+ }
+ 
+ .facilities {
+	 padding: baseline(4) 0;
+ }

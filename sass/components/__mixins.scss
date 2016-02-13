@@ -1,0 +1,115 @@
+/* ========================================
+	
+	01 : Media Queries - Break Points 
+
+======================================== */
+
+
+$phone-height: 568px;
+$phone-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin phone {
+	@media (max-width: #{$tablet-width - 1px}) {
+		@content;
+	}
+}
+
+@mixin phone-down {
+	@media (max-width: #{$phone-height - 1px}) {
+		@content;
+	}
+}
+
+@mixin phone-portrait {
+	@media (orientation: portrait) and (max-width: #{$phone-height - 1px}) {
+		@content;
+	}
+}
+
+@mixin phone-landscape {
+	@media (orientation: landscape) and (max-width: #{$tablet-width - 1px}) {
+		@content;
+	}
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet-down {
+  @media (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin tablet-up {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+
+/* ========================================
+	
+	02 : Easy Gradients 
+
+======================================== */
+
+
+@mixin gradient-top-left($color1, $color2, $deg : '-45deg'){
+	background: $color1;
+	background: linear-gradient($deg,   $color1 0%,$color2 100%);
+}
+
+@mixin gradient-bottom-left($color1, $color2, $deg : '45deg'){
+	background: $color1;
+	background: linear-gradient($deg,   $color1 0%,$color2 100%);
+}
+
+@mixin gradient-vertical($color1, $color2, $deg : '45deg'){
+	background: $color1;
+	background: linear-gradient($deg,   $color1 0%,$color2 100%);
+}
+
+
+/* ========================================
+	
+	03 : General Styling
+
+======================================== */
+
+
+@mixin corner-radius{
+	border-radius:  baseline(1/2);
+}
+
+@mixin border-1 {
+	border: 2px solid $color-white-3;
+}
+
+@mixin full-height {
+	min-height: 100vh;
+}
+
+@mixin center-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+@mixin background-pattern-1 {
+	background-image: url("/images/dots.png");
+	background-position: center bottom;
+	background-repeat: repeat-x;
+}

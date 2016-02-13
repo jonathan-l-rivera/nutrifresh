@@ -1,0 +1,93 @@
+$utility-height: baseline(1.75);
+
+/* 1.0 Utility Header */
+
+.utility-bar {
+	width: 100%;
+	height: $utility-height;
+	line-height: $utility-height;
+	background: $color-white-2;
+	border-bottom: 1px solid $color-white-3;
+	z-index: 10;
+		
+	nav.user {
+		float: right;
+		line-height: $utility-height;	
+	}
+	
+	.utility-btn {
+		@include small-font;
+		display: inline-block;
+		line-height: $utility-height;
+		padding: 0 baseline(1);
+		font-weight: 700;
+		color: $color-black-1;
+		text-transform: uppercase;
+		letter-spacing: baseline(0.05);
+		border-left: 1px solid $color-white-3;
+		
+		i {
+			@include body-font
+		}
+	}
+}
+
+@mixin split-section {
+	display: flex;
+	
+	@include phone {
+		flex-direction: column;
+	}
+	
+	.content-panel {
+		width: 66.66%;
+		
+		@include phone{
+			width: 100%;
+			min-height: 50vh;
+		}
+	}
+	
+	.action-panel {
+		width: 33.33%;
+		
+		@include phone{
+			width: 100%;
+			min-height: 50vh;
+		}
+		
+		&.is-active {
+			@include col-2-3;
+		}
+	}
+	
+	.slide-in-left-panel {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transform: translateX(-100%);
+		
+		&.is-active {
+			transform: translateX(0);
+		}
+	}
+	
+	.slide-in-right-panel {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transform: translateX(100%);
+		
+		&.is-active {
+			transform: translateX(0);
+		}
+	}
+}
+
+.split-section {
+	@include split-section;
+}

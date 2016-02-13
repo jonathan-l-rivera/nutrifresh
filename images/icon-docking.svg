@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="27px" height="24px" viewBox="0 0 27 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-docking</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" d="M0,0.0192941176 L26.3369412,0.0192941176 L26.3369412,24 L0,24 L0,0.0192941176 Z"></path>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g sketch:type="MSArtboardGroup" transform="translate(-922.000000, -3445.000000)" id="Services">
+            <g sketch:type="MSLayerGroup" transform="translate(0.000000, 3044.000000)">
+                <g id="icon-docking" transform="translate(922.000000, 401.000000)">
+                    <path d="M25.4425412,24 L25.4425412,7.83341176 L13.1324235,0.978823529 L0.894305882,7.82776471 L0.894305882,24 L0.000188235294,24 L0.000188235294,7.56564706 C0.000188235294,7.40376471 0.0877176471,7.25458824 0.228423529,7.176 L12.9136,0.0762352941 C12.9799529,0.0390588235 13.0557176,0.0192941176 13.1319529,0.0192941176 C13.2077176,0.0192941176 13.2830118,0.0390588235 13.3493647,0.0757647059 L26.1074824,7.18023529 C26.2486588,7.25882353 26.3366588,7.40847059 26.3366588,7.57082353 L26.3366588,24 L25.4425412,24 Z" id="Fill-1" fill="#00AFF3" sketch:type="MSShapeGroup"></path>
+                    <path d="M21.4646118,24 L21.4646118,13.8409412 L4.87214118,13.8409412 L4.87214118,24 L3.97755294,24 L3.97755294,13.1985882 C3.97755294,12.952 4.17849412,12.7515294 4.42461176,12.7515294 L21.9116706,12.7515294 C22.1582588,12.7515294 22.3587294,12.952 22.3587294,13.1985882 L22.3587294,24 L21.4646118,24 Z" id="Fill-3" fill="#A9D43A" sketch:type="MSShapeGroup"></path>
+                    <mask id="mask-2" sketch:name="Clip 6" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-6"></g>
+                    <path d="M5.94588235,9.2 L8.59952941,9.2 L8.59952941,10.0941176 L5.94588235,10.0941176 L5.94588235,9.2 Z" id="Fill-5" fill="#A9D43A" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M11.8414118,9.2 L14.4950588,9.2 L14.4950588,10.0941176 L11.8414118,10.0941176 L11.8414118,9.2 Z" id="Fill-7" fill="#A9D43A" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M17.7369412,9.2 L20.3905882,9.2 L20.3905882,10.0941176 L17.7369412,10.0941176 L17.7369412,9.2 Z" id="Fill-8" fill="#A9D43A" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M10.9022588,15.2318588 L10.9022588,16.2516235 L9.88249412,16.2516235 L9.88249412,15.2318588 L8.45802353,15.2318588 L8.45802353,19.1005647 L12.3267294,19.1005647 L12.3267294,15.2318588 L10.9022588,15.2318588 Z" id="Fill-9" fill="#A9D43A" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M15.7327529,15.2318588 L15.7327529,16.2516235 L14.7129882,16.2516235 L14.7129882,15.2318588 L13.2885176,15.2318588 L13.2885176,19.1005647 L17.1572235,19.1005647 L17.1572235,15.2318588 L15.7327529,15.2318588 Z" id="Fill-10" fill="#A9D43A" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M10.9022588,20.1312471 L10.9022588,21.1510118 L9.88249412,21.1510118 L9.88249412,20.1312471 L8.45802353,20.1312471 L8.45802353,23.9999529 L12.3267294,23.9999529 L12.3267294,20.1312471 L10.9022588,20.1312471 Z" id="Fill-11" fill="#A9D43A" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M15.7327529,20.1312471 L15.7327529,21.1510118 L14.7129882,21.1510118 L14.7129882,20.1312471 L13.2885176,20.1312471 L13.2885176,23.9999529 L17.1572235,23.9999529 L17.1572235,20.1312471 L15.7327529,20.1312471 Z" id="Fill-12" fill="#A9D43A" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

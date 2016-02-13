@@ -1,0 +1,281 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,300italic,400italic,700italic);
+/* Font Size Varients */
+
+$mega-font-size: $base-font-size * pow($font-ratio, 4);
+$h1-font-size: $base-font-size * pow($font-ratio, 3);
+$h2-font-size: $base-font-size * pow($font-ratio, 2);
+$h3-font-size: $base-font-size * $font-ratio;
+$h4-font-size: $base-font-size;
+
+/* Font Opacity - Dark Font on Light Background */
+
+%font-dark-primary {
+	color: black;
+	opacity: 0.87;
+}
+
+@mixin font-dark-secondary {
+	color: black;
+	opacity: 0.54;
+}
+
+@mixin font-dark-tertiary {
+	color: black;
+	opacity: 0.38;
+}
+
+/* Font Opacity - Light Font on Dark Background */
+
+@mixin font-light-primary {
+	color: white;
+	opacity: 1.0;
+}
+
+@mixin font-light-secondary {
+	color: white;
+	opacity: 0.7;
+}
+
+@mixin font-light-tertiary {
+	color: white;
+	opacity: 0.3;
+}
+
+/* Font Families */
+
+@mixin font-stack-heading-main {
+	font-family:  'Lato', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+@mixin font-stack-heading-secondary {
+	font-family:  'Lato', sans-serif;
+	font-weight: bold;
+}
+
+@mixin font-stack-body {
+	font-family: 'Lato', sans-serif;
+}
+
+
+@mixin mega-font {
+	font-size: $mega-font-size * 1rem;
+	line-height: roundUpToAny($mega-font-size) * 1rem;
+	@include phone {
+		font-size: $h1-font-size * 1rem;
+		line-height: roundUpToAny($h1-font-size) * 1rem;
+	}
+}
+
+@mixin x-large-font {
+	font-size: $h1-font-size * 1rem;
+	line-height: roundUpToAny($h1-font-size) * 1rem;
+}
+
+@mixin large-font {
+	font-size: $h2-font-size * 1rem;
+	line-height: roundUpToAny($h2-font-size) * 1rem;
+}
+
+@mixin medium-font {
+	font-size: $h3-font-size * 1rem;
+	line-height: roundUpToAny($h3-font-size) * 1rem;
+}
+
+
+@mixin body-font {
+	font-size: $base-font-size * 1rem;
+	line-height: roundUpToAny($base-font-size) * 1rem;
+}
+
+@mixin small-font {
+	font-size: ($base-font-size * 8/10) * 1rem;
+}
+
+@mixin leader-font {
+	font-size: $h3-font-size * 1rem;
+	line-height: $h2-font-size * 1rem;
+}
+
+@mixin sub-title-font {
+	font-size: $h4-font-size * 1rem;
+	line-height: $h2-font-size * 1rem;
+}
+
+@mixin title-lines {
+	text-align: center;
+	overflow: hidden;
+
+		span{
+			position: relative;
+		}
+
+		span:before{
+			content: ' ';
+			height: 0;
+			width: 300%;
+			position: absolute;
+			border-bottom: 1px solid $color-white-1;
+			top: 50%;
+			left: calc(-300% - #{baseline(1/2)});
+		}
+
+		span:after{
+			content: ' ';
+			height: 0;
+			width: 300%;
+			position: absolute;
+			border-bottom: 1px solid $color-white-1;
+			top: 50%;
+			right: calc(-300% - #{baseline(1/2)});
+		}
+}
+
+@mixin color-inherent(){
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	a,
+	i,
+	input,
+	label,
+	[class^="btn"]{
+		color: inherit;
+	}
+}
+/* Typography CSS */
+
+
+html{
+	font-size: 1em;
+	@include font-stack-body;
+}
+
+h1{
+	@include x-large-font;
+	@include font-stack-heading-main;
+	margin-bottom: baseline(1);
+}
+
+h2{
+	@include large-font;
+	@include font-stack-heading-main;
+	margin-bottom: baseline(1);
+}
+
+h3{
+	@include medium-font;
+	@include font-stack-heading-main;
+	margin-bottom: baseline(1);
+	
+}
+
+h4{
+	@include body-font;
+	@include font-stack-heading-secondary;
+	margin-bottom: baseline(1);
+}
+
+body {
+	@include body-font;
+}
+
+h5,
+h6 {
+	@include font-stack-heading-secondary;
+}
+
+p {
+	@include body-font;
+	margin-bottom: baseline(1);
+}
+
+strong {
+	font-weight: bold;
+}
+
+ol {
+	margin-bottom: baseline(1);
+	list-style: decimal;
+	list-style-position: inside;
+}
+
+.mega-font {
+	@include mega-font;
+	@include font-stack-heading-main;
+}
+
+.leader {
+	@include leader-font;
+	font-weight: 300;
+}
+
+.sub-title {
+	margin-top: baseline(-1);
+}
+
+.title-lines {
+	@include title-lines;
+}
+
+.align-center {
+	text-align: center;
+}
+/* Media Queries */
+
+.content-copy {
+	ul {
+		list-style: circle;
+		list-style-position: outside;
+		padding-left: baseline(1);
+	}
+	li {
+		margin-bottom: baseline(1/2);
+	}
+}
+
+@include tablet{
+	html{
+		font-size: 0.85em;
+	}
+}
+
+
+@include phone-landscape{
+	html{
+		font-size: 0.8em;
+	}
+	
+	h1{
+		font-size: $h2-font-size * 1rem;
+		line-height: roundUpToAny($h2-font-size) * 1rem;
+		margin-bottom: baseline(1);
+	}
+}
+
+@include phone-portrait{
+	html{
+		font-size: 0.8em;
+	}
+		h1{
+		font-size: $h2-font-size * 1rem;
+		line-height: roundUpToAny($h2-font-size) * 1rem;
+		margin-bottom: baseline(1);
+	}
+}
+
+@media print {
+	html{
+		font-size: 0.8em;
+	}
+	h1{
+		font-size: $h2-font-size * 1rem;
+		line-height: roundUpToAny($h2-font-size) * 1rem;
+		margin-bottom: baseline(1);
+	}
+}

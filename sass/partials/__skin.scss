@@ -1,0 +1,158 @@
+// Brand Colors
+
+%color-background-1{
+  background-color: $color-primary;
+}
+
+%color-background-2{
+  background-color: $color-secondary;
+}
+
+%color-background-3{
+  background-color: $color-tertiary;
+}
+
+// Nuetrals
+
+%color-background-nuetral-1{
+  background-color: $color-nuetral-1;
+}
+
+%color-background-nuetral-2{
+  background-color: $color-nuetral-2;
+}
+
+%color-background-nuetral-3{
+  background-color: $color-nuetral-3;
+}
+
+
+// Whites
+
+%color-background-white-1{
+  background-color: $color-white-1;
+}
+
+%color-background-white-2{
+  background-color: $color-white-2;
+}
+
+%color-background-white-3{
+  background-color: $color-white-3;
+}
+
+
+// Blacks
+
+%color-background-black-1{
+  background-color: $color-black-1;
+}
+
+%color-background-black-2{
+  background-color: $color-black-2;
+}
+
+%color-background-black-3{
+  background-color: $color-black-3;
+}
+
+
+// Gradients
+
+%color-background-mix-1{
+	@include gradient-top-left($color-primary, $color-secondary);
+}
+
+
+// Text Colors
+
+%color-text-white-1{
+	color: $color-white-1;
+
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	li{
+		color: inherit;
+	}
+}
+
+%color-text-white-2{
+	color: $color-white-2;
+
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	li{
+		color: inherit;
+	}
+}
+
+%color-text-white-3{
+	color: $color-white-3;
+
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	li{
+		color: inherit;
+	}
+}
+
+
+%color-text-black-1{
+	color: $color-black-1;
+
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	li{
+		color: inherit;
+	}
+}
+
+%color-text-black-2{
+	color: $color-black-2;
+
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	li{
+		color: inherit;
+	}
+}
+
+%color-text-black-3{
+	color: $color-black-3;
+
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	li{
+		color: inherit;
+	}
+}
