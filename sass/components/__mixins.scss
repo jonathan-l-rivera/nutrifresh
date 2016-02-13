@@ -90,7 +90,7 @@ $desktop-width: 1024px;
 
 
 @mixin corner-radius{
-	border-radius:  baseline(1/2);
+	border-radius:  0;
 }
 
 @mixin border-1 {

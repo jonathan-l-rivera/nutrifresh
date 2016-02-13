@@ -94,7 +94,7 @@ $h4-font-size: $base-font-size;
 }
 
 @mixin leader-font {
-	font-size: $h3-font-size * 1rem;
+	font-size: $base-font-size * 1.2rem;
 	line-height: $h2-font-size * 1rem;
 }
 

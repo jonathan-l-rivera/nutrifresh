@@ -16,6 +16,59 @@ strong {
 	text-align: center;
 	margin-bottom: baseline(2);
 }
+
+/* ==========================
+	
+	Header 
+	
+ ========================== */
+ 
+ .main-header {
+	 display: flex;
+	 justify-content: space-between;
+	 height: baseline(3);
+	 line-height: baseline(3);
+ }
+ 
+ .header-logo {
+	 padding: 0 baseline(1);
+	 img {
+		 display: inline-block;
+		 vertical-align: middle;
+		 
+	 }
+ }
+ 
+ .header-menu {
+	 li {
+		 display: inline-block;
+	 }
+	 a {
+		 display: block;
+		 padding: 0 baseline(1/2);
+		 text-transform: uppercase;
+		 color: $color-nuetral-1;
+		 font-weight: 300;
+	 }
+ }
+ 
+ .header-phone {
+	 @include small-font;
+	 font-weight: bold;
+	 color: $color-secondary;
+	 img {
+		 margin-right: baseline(1/4);
+		 vertical-align: middle;
+	 }
+ }
+ 
+ .customer-login-btn {
+	 margin: baseline(1/4);
+	 background: none;
+	 line-height: baseline(1.75);
+	 border: baseline(1/8) solid $color-primary;
+	 color: $color-primary;
+ }
  
 /* ==========================
 	
@@ -28,6 +81,7 @@ strong {
  }
  
  .hero-content {
+	 height: 100vh;
 	 max-width: 50vw;
 	 padding: baseline(2);
 	 color: $color-white-1;
@@ -53,15 +107,157 @@ strong {
  }
  
  .why-nutrifresh {
-	background: $color-white-2 url(../images/why-nutrifresh-bg.jpg) no-repeat left center;
+	position: relative;
+	background: $color-white-2;
+		 
+	 &:after {
+		 content: ' ';
+		 position: absolute;
+		 right: 66.66%;
+		 top: 0;
+		 height: 100%;
+		 width: 33.33%;
+		 background: url(../images/why-nutrifresh-bg.jpg) no-repeat right center;
+		 background-size: cover;
+	 }
  }
  
- .why-content {
-	 padding-top: baseline(2);
-	 padding-bottom: baseline(2);
-	 max-width: calc(#{$sitewidth} * 2/3); 
- }
- 
- .facilities {
-	 padding: baseline(4) 0;
- }
+.why-content {
+ margin-right: 0;
+ padding-top: baseline(2);
+ padding-bottom: baseline(2);
+ max-width: calc(#{$sitewidth} * 2/3); 
+}
+
+.facilities {
+ padding: baseline(4) 0;
+}
+
+.facility-main {
+	margin-bottom: baseline(1);
+}
+
+.facility-image {
+	position: relative;
+	text-align: center;
+	
+	&:after {
+		content: ' ';
+		position: absolute;
+		right: 0;
+		top: 50%;
+		width: 50%;
+		height: 1px;
+		background: $color-primary;
+		z-index: -1;
+	}
+}
+
+.facility-content {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+}
+
+.facilty-secondary{
+	position: relative;
+	margin-bottom: baseline(1);
+	&:after {
+		content: ' ';
+		position: absolute;
+		left: 0;
+		top: 50px;
+		height: 25px;
+		width: 100%;
+		border-top: solid 1px rgba($color-primary, 0.2);
+		border-bottom: solid 1px rgba($color-secondary, 0.2);
+	}
+}
+
+.services {
+	padding: baseline(4) 0;
+	background: $color-white-2;
+}
+
+.icon-list {
+	border-right: 1px solid #E0E0E0;
+	:last-child > & {
+		border: none;
+	}
+	li {
+		@include small-font;
+		color: $color-black-3;
+		font-weight: bold;
+	}
+	
+	.icon {
+		width: baseline(2.5);
+		height: baseline(2);
+		line-height: baseline(2);
+		display: inline-block;
+		vertical-align: middle;
+		text-align: center;
+	}
+	
+	img {
+		max-width: baseline(2);
+		vertical-align: middle;
+	}
+}
+
+.gallery {
+	background: $color-white-2;
+	
+	.container {
+		padding: baseline(1/8);
+		background: $color-white-1;
+		box-shadow: 0 -11px 51px rgba(0,0,0,0.08);
+	}
+	.row {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	[class^="col"] {
+		position: relative;
+		padding: 0;
+	}
+	img {
+		max-width: 100%;
+		display: block;
+	}
+	
+	.gallery-quad {
+		display: flex;
+		flex-wrap: wrap;
+		.gallery-image {	
+			width: calc(50%);
+		}
+	}
+	
+	.gallery-image {
+		border: baseline(1/8) solid $color-white-1;
+	}
+	
+	.gallery-image-tall {
+		.gallery-image {
+			display: flex;
+			position: absolute;
+			left: 0;
+			top:0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+		position: relative;
+	}
+}
+
+.certifications {
+	padding: baseline(4) 0;
+	background: $color-secondary;
+	color: $color-white-1;
+	text-align: center;
+	@include color-inherent;
+}
